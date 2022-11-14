@@ -1,0 +1,17 @@
+.container {
+    width: 600px;
+    height: 600px;
+    overflow: scroll;
+    margin: 0 auto;
+    border: 1px solid gray;
+    background-color: lightblue;
+    color: #fff;
+    padding: 20px;
+}
+
+h3,
+.btnBox {
+    display: flex;
+    justify-content: center;
+
+}
