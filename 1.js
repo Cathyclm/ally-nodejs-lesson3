@@ -15,5 +15,16 @@ axios.get(url).then((response)=>{
 
 function postUser(){
     console.log("call postUser");
-
+  const url = "http://127.0.0.1:8000/api/user"
+  const body ={
+    name: 'test',
+    age:89
+  }
+    axios.post(url,body).then((response)=>{
+        const addedUser = response.data.data;
+        console.log("user is added", addedUser);
+        const li = document.createElement('li');
+        li.innerHTML = `${addedUser.name}: ${addedUser.age}`
+        document.getElementById('myList').appendChild(li)
+    })
 }

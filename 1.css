@@ -15,3 +15,23 @@ h3,
     justify-content: center;
 
 }
+
+ul li {
+    list-style-type: none;
+    counter-increment: item;
+    margin-bottom: 20px;
+
+}
+
+/* 伪类 */
+ul li:before {
+    content: counter(item);
+    font-size: 80%;
+    background-color: #f9dd94;
+    color: lightblue;
+    font-weight: bold;
+    padding: 3px 8px;
+    border-radius: 3px;
+    margin-right: 5px;
+
+}
